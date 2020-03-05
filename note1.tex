@@ -1,0 +1,57 @@
+\documentclass[UTF8]{article}
+
+\usepackage{xeCJK}
+%\usepackage{ctex}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+
+\setCJKmonofont[BoldFont=STKaitiSC-Bold,ItalicFont=STKaiti]{STKaiti}
+
+
+\title{基于GCN的时序知识图谱的知识推理应用}
+\date{}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{相关工作}
+\begin{itemize}
+	\item 时序知识图谱的嵌入
+	\begin{itemize}
+		\item \cite{leblay2018deriving}该文专注于预测未标注连边的时间有效性的问题。该文将这一问题归纳为关系嵌入(Relation Embedding)的一种变体。
+		\item \cite{dasgupta2018hyte}提出了一种时间感知的知识图谱嵌入方法，该方法通过将每个时间戳与相应的超平面相关联，将时间明确地合并到实体关系空间中。该方法不仅使用时间指导来执行知识图谱推理，而且还可以预测缺少时间注释的关系事实的时间范围。
+		\item \cite{goel2019diachronic}提出了一种用于时序知识图谱补完的历时(Diachronic)嵌入方法，该方法在任何时间点都为时序知识图谱的实体提供了隐藏表示形式。该文证明了将历时性嵌入与SimplE结合起来可以得到一个完全可表达(fully expressive model)的模型。
+	\end{itemize}
+	\item 时序知识图谱的知识推理
+	\begin{itemize}
+		\item 时序关系预测（时序关系依赖/时序信息推理）
+		\begin{itemize}
+			\item \cite{jin2019recurrent}提出了递归事件网络（RE-Net），这是一种新颖的自回归体系结构，用于对多关系图（例如，时间知识图）的时间序列进行建模，可以对未来的时间戳执行顺序的全局结构推断，以预测新事件。
+			\item \cite{赵泽亚2015基于动态异构信息网络的时序关系预测}提出了一个时间差关系路径的概念， 然后提出一种基于时间差关系路径的时序关系预测 方法，该方法在预测关系是否产生的同时给出关系 产生的时间。
+
+		\end{itemize}
+		\item 链路预测/知识图谱补完
+		\begin{itemize}
+			\item \cite{garcia2018learning}提出了数位级(Digital- level)的LSTM，以学习时间增强(time-augmented)的知识图谱事实的表示形式，该方法可以与现有些方法结合用于链接预测。
+			\item \cite{jiang2016towards}提出了一种新颖的时间感知知识图补完模型，该模型能够使用现有事实和事实的时间信息来预测知识图谱中的链接。
+			\item \cite{esteban2016predicting}训练了一种事件预测模型，该模型使用知识图谱背景信息和最近事件的信息。 通过预测未来的事件，可以预测知识图谱中的可能变化，从而也可以获得知识图谱演化的模型。
+		\end{itemize}
+
+
+	\end{itemize}
+	\begin{itemize}
+		\item 
+	\end{itemize}
+
+
+\end{itemize}
+	
+
+
+\bibliography{reference}
+\bibliographystyle{IEEEtran}
+
+\end{document}
